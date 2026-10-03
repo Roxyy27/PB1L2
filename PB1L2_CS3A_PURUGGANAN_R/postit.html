@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostIt — Your Post Board</title>
+    <link rel="stylesheet" href="postit.css">
+</head>
+<body>
+    <div class="container">
+        <h2> PostIt — Simple Post Board</h2>
+
+        <div class="name-section" id="nameSection">
+            <h3>Hello! Please enter your name to start posting</h3>
+            <input type="text" id="username" placeholder="Enter your full name here...">
+            <button type="button" onclick="enterName()"> Enter Board</button>
+        </div>
+
+        <div class="post-section" id="postSection">
+            <h3>Welcome, <span id="welcomeUser"></span>!</h3>
+            
+            <label for="postCaption">Write your caption:</label>
+            <textarea id="postCaption" placeholder="Type your post here..."></textarea>
+            
+            <button type="button" onclick="addPost()"> POST</button>
+
+            <div class="thread-container">
+                <h3> Your Post Thread</h3>
+                <div id="postThread">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="postit.js"></script>
+</body>
+</html>
